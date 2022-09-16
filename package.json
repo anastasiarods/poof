@@ -1,0 +1,17 @@
+{
+  "name": "poof",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:example": "pnpm --filter example/* dev"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "dependencies": {
+    "esbuild": "^0.15.7"
+  }
+}
