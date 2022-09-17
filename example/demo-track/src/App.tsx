@@ -7,9 +7,8 @@ import { useAccount } from "wagmi";
 
 console.log("App loaded");
 
-analytics.track("screenView", { routeName: "wagmi_home" });
-
 function App() {
+  const [cid, setCid] = React.useState("");
   const [step, setStep] = React.useState(0);
   const { address } = useAccount();
 
@@ -28,7 +27,7 @@ function App() {
           <button
             onClick={() => {
               setStep((prev) => prev + 1);
-              analytics.track("button_press", { action: "Free Money" });
+              analytics.track("free_money_press", {});
             }}
           >
             Get Free Money
@@ -39,7 +38,7 @@ function App() {
             onClick={() => {
               setStep((prev) => prev + 1);
 
-              analytics.track("button_press", { action: "Mint NFT" });
+              analytics.track("mint_nft_press", {});
             }}
           >
             Mint NFT
@@ -50,7 +49,7 @@ function App() {
             onClick={() => {
               setStep((prev) => prev + 1);
 
-              analytics.track("button_press", { action: "Get RICH" });
+              analytics.track("get_rich_press", {});
             }}
           >
             Get Rich
@@ -61,11 +60,14 @@ function App() {
 
       <button
         onClick={() => {
-          analytics.sync();
+          analytics.sync().then((c) => {
+            setCid(c);
+          });
         }}
       >
         Share Love (Usage Data)
       </button>
+      <div>Current CID: {cid}</div>
     </div>
   );
 }
