@@ -11,6 +11,34 @@ importers:
     dependencies:
       esbuild: 0.15.7
 
+  apps/dashboard:
+    specifiers:
+      '@testing-library/jest-dom': ^5.14.1
+      '@testing-library/react': ^13.0.0
+      '@testing-library/user-event': ^13.2.1
+      '@types/jest': ^27.0.1
+      '@types/node': ^16.7.13
+      '@types/react': ^18.0.0
+      '@types/react-dom': ^18.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      react-scripts: 5.0.1
+      typescript: ^4.4.2
+      web-vitals: ^2.1.0
+    dependencies:
+      '@testing-library/jest-dom': 5.16.5
+      '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
+      '@testing-library/user-event': 13.5.0
+      '@types/jest': 27.5.2
+      '@types/node': 16.11.59
+      '@types/react': 18.0.20
+      '@types/react-dom': 18.0.6
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-scripts: 5.0.1_n4upredruleo7vrbwztywbpoxq
+      typescript: 4.8.3
+      web-vitals: 2.1.4
+
   example/demo-track:
     specifiers:
       '@rainbow-me/rainbowkit': ^0.6.0
@@ -3111,7 +3139,7 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.6
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: false
 
   /@types/eslint/8.4.6:

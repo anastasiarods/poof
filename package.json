@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev:example": "pnpm --filter example/* dev"
+    "dev:demo": "pnpm --filter demo-track dev",
+    "dev:dashboard": "pnpm --filter dashboard dev"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
