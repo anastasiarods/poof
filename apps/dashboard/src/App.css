@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+#chartdiv{
+  width: 100%;
+  height: 400px;
+}
+#chartdiv2{
+  width: 100%;
+  height: 400px;
+}
